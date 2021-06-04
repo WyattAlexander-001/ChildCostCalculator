@@ -57,46 +57,46 @@ totalIncomeWithInflation = netIncomeYouWouldHaveOverEighteenYearsWithInflation +
 
 #--------------------------------------------------------------------------#
 print('\n----------------------------\n')
-print(f'The TOTAL cost to raise {children} children from age 0 to 18 is: ${totalCostForChild}')
-print(f'The TOTAL cost to raise {children} from age 0 to 18 accounting for inflation is: ${totalCostForChildWithInflation}')
+print(f'The TOTAL cost to raise {children} children from age 0 to 18 is: ${round(totalCostForChild,2)}')
+print(f'The TOTAL cost to raise {children} from age 0 to 18 accounting for inflation is: ${round(totalCostForChildWithInflation,2)}')
 print()
 print(f'Without accounting for inflation ')
-print(f'That would be a YEARLY cost of: ${yearlyCostForChild}')
-print(f'That would be a MONTHLY cost of: ${monthlyCostForChild}')
-print(f'That would be a WEEKLY cost of: ${weeklyCostForChild}')
-print(f'That would be a DAILY cost of: ${dailyCostForChild}')
+print(f'That would be a YEARLY cost of: ${round(yearlyCostForChild,2)}')
+print(f'That would be a MONTHLY cost of: ${round(monthlyCostForChild,2)}')
+print(f'That would be a WEEKLY cost of: ${round(weeklyCostForChild,2)}')
+print(f'That would be a DAILY cost of: ${round(dailyCostForChild,2)}')
 print()
 print(f'With accounting for inflation ')
-print(f'That would be a YEARLY cost of: ${yearlyCostForChildWithInflation}')
-print(f'That would be a MONTHLY cost of: ${monthlyCostForChildWithInflation}')
-print(f'That would be a WEEKLY cost of: ${weeklyCostForChildWithInflation}')
-print(f'That would be a DAILY cost of: ${dailyCostForChildWithInflation}')
+print(f'That would be a YEARLY cost of: ${round(yearlyCostForChildWithInflation,2)}')
+print(f'That would be a MONTHLY cost of: ${round(monthlyCostForChildWithInflation,2)}')
+print(f'That would be a WEEKLY cost of: ${round(weeklyCostForChildWithInflation,2)}')
+print(f'That would be a DAILY cost of: ${round(dailyCostForChildWithInflation,2)}')
 
 print('\n----------------------------\n')
 
-print(f'With your net income of: ${netAnnualIncome}')
-print(f'Over 18 years WITHOUT accounting for a inflation/raises your income would be: ${netIncomeYouWouldHaveOverEighteenYearsNoInflation}')
-print(f'Over 18 years ACCOUNTING for a minimum 2% raise your income would be: ${netIncomeYouWouldHaveOverEighteenYearsWithInflation}')
+print(f'With your net income of: ${round(netAnnualIncome,2)}')
+print(f'Over 18 years WITHOUT accounting for a inflation/raises your income would be: ${round(netIncomeYouWouldHaveOverEighteenYearsNoInflation,2)}')
+print(f'Over 18 years ACCOUNTING for a minimum 2% raise your income would be: ${round(netIncomeYouWouldHaveOverEighteenYearsWithInflation,2)}')
 print()
 print('Your Income Without Inflation:')
-print(f'Your MONTHLY income is: ${netMonthlyIncome}')
-print(f'Your WEEKLY income is: ${netWeeklyIncome}')
-print(f'Your Daily income is: ${netDailyIncome}')
+print(f'Your MONTHLY income is: ${round(netMonthlyIncome,2)}')
+print(f'Your WEEKLY income is: ${round(netWeeklyIncome,2)}')
+print(f'Your Daily income is: ${round(netDailyIncome,2)}')
 print()
 print('Your Income With Inflation:')
-print(f'Your MONTHLY income is: ${netMonthlyIncomeWithInflation}')
-print(f'Your WEEKLY income is: ${netWeeklyIncomeWithInflation}')
-print(f'Your Daily income is: ${netDailyIncomeWithInflation}')
+print(f'Your MONTHLY income is: ${round(netMonthlyIncomeWithInflation,2)}')
+print(f'Your WEEKLY income is: ${round(netWeeklyIncomeWithInflation,2)}')
+print(f'Your Daily income is: ${round(netDailyIncomeWithInflation,2)}')
 print()
 print("The government gives an annual TAX CREDIT for each child UNDER age 18: ")
 print(f'Your tax credit: ${childTaxCreditPerChild}')
 print(f'Your tax credit value over 17 years: ${childTaxCreditPerChildToAgeSeventeen}')
-print(f'Your tax credit value over 17 years with 2% yearly inflation: ${childTaxCreditPerChildToAgeSeventeenWithInflation}')
+print(f'Your tax credit value over 17 years with 2% yearly inflation: ${round(childTaxCreditPerChildToAgeSeventeenWithInflation,2)}')
 print()
 print("WITHOUT INFLATION:")
-print(f'Your TOTAL INCOME: ${totalIncomeNoInflation}')
+print(f'Your TOTAL INCOME: ${round(totalIncomeNoInflation,2)}')
 print("WITH INFLATION:")
-print(f'Your TOTAL INCOME: ${totalIncomeWithInflation}')
+print(f'Your TOTAL INCOME: ${round(totalIncomeWithInflation,2)}')
 
 
 print('\n----------------------------\n')
@@ -117,5 +117,9 @@ else:
 #--------------------------------------------------------------------------#
 
 
+'''
 
+Use one PRINT statement for all this stuff
+
+'''
 
