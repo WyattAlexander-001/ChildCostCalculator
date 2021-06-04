@@ -57,8 +57,8 @@ totalIncomeWithInflation = netIncomeYouWouldHaveOverEighteenYearsWithInflation +
 
 #--------------------------------------------------------------------------#
 print('\n----------------------------\n')
-print(f'The TOTAL cost to raise a child from age 0 to 18 is:${totalCostForChild}')
-print(f'The TOTAL cost to raise a child from age 0 to 18 accounting for inflation is:${totalCostForChildWithInflation}')
+print(f'The TOTAL cost to raise {children} children from age 0 to 18 is: ${totalCostForChild}')
+print(f'The TOTAL cost to raise {children} from age 0 to 18 accounting for inflation is: ${totalCostForChildWithInflation}')
 print()
 print(f'Without accounting for inflation ')
 print(f'That would be a YEARLY cost of: ${yearlyCostForChild}')
