@@ -22,12 +22,14 @@ children = int(input("Enter how many children you want:\n"))
 netMonthlyIncome = netAnnualIncome/12
 netWeeklyIncome = netAnnualIncome/52.143
 netDailyIncome = netAnnualIncome/365
+netHourlyIncome = netDailyIncome/8
 netIncomeYouWouldHaveOverEighteenYearsNoInflation = netAnnualIncome *18
 
 #USER INCOME WITH INFLATION #1.36 is from 2% inflation eg: 2/100 = 0.02 * years to get 0.36, then add 1 to get 1.36
 netMonthlyIncomeWithInflation = netAnnualIncome/12 *1.36
 netWeeklyIncomeWithInflation  = netAnnualIncome/52.143 * 1.36
 netDailyIncomeWithInflation  = netAnnualIncome/365 * 1.36
+netHourlyIncomeWithInflation = netDailyIncomeWithInflation/8
 netIncomeYouWouldHaveOverEighteenYearsWithInflation = netAnnualIncome *18 * 1.36
 
 #TAX CREDIT
@@ -82,21 +84,24 @@ print('Your Income Without Inflation:')
 print(f'Your MONTHLY income is: ${round(netMonthlyIncome,2)}')
 print(f'Your WEEKLY income is: ${round(netWeeklyIncome,2)}')
 print(f'Your Daily income is: ${round(netDailyIncome,2)}')
+print(f'Your Hourly income is: ${round(netHourlyIncome,2)}')
 print()
 print('Your Income With Inflation:')
 print(f'Your MONTHLY income is: ${round(netMonthlyIncomeWithInflation,2)}')
 print(f'Your WEEKLY income is: ${round(netWeeklyIncomeWithInflation,2)}')
 print(f'Your Daily income is: ${round(netDailyIncomeWithInflation,2)}')
+print(f'Your Hourly income is: ${round(netHourlyIncomeWithInflation,2)}')
 print()
 print("The government gives an annual TAX CREDIT for each child UNDER age 18: ")
 print(f'Your tax credit: ${childTaxCreditPerChild}')
 print(f'Your tax credit value over 17 years: ${childTaxCreditPerChildToAgeSeventeen}')
 print(f'Your tax credit value over 17 years with 2% yearly inflation: ${round(childTaxCreditPerChildToAgeSeventeenWithInflation,2)}')
 print()
+print('YOUR TOTAL INCOME OVER 18 YEARS:')
 print("WITHOUT INFLATION:")
-print(f'Your TOTAL INCOME: ${round(totalIncomeNoInflation,2)}')
+print(f'${round(totalIncomeNoInflation,2)}')
 print("WITH INFLATION:")
-print(f'Your TOTAL INCOME: ${round(totalIncomeWithInflation,2)}')
+print(f'${round(totalIncomeWithInflation,2)}')
 
 
 print('\n----------------------------\n')
@@ -122,4 +127,3 @@ else:
 Use one PRINT statement for all this stuff
 
 '''
-
